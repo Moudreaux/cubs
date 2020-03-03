@@ -1,0 +1,74 @@
+/* Reset */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}
+*{box-sizing: border-box}
+
+/* Fuentes */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Sans'), local('PTSans-Regular'), url('./../assets/fonts/ptsans.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'PT Sans Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url('./../assets/fonts/ptsansbold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* iconos */
+@font-face {
+  font-family: 'iconos';
+  src: url('./../assets/fonts/iconos.eot?40701407');
+  src: url('./../assets/fonts/iconos.eot?40701407#iefix') format('embedded-opentype'),
+       url('./../assets/fonts/iconos.woff2?40701407') format('woff2'),
+       url('./../assets/fonts/iconos.woff?40701407') format('woff'),
+       url('./../assets/fonts/iconos.ttf?40701407') format('truetype'),
+       url('./../assets/fonts/iconos.svg?40701407#iconos') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "iconos";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-menu:before { content: '\65'; } /* 'e' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-instagram:before { content: '\69'; } /* 'i' */
+.icon-map:before { content: '\6d'; } /* 'm' */
+.icon-phone:before { content: '\74'; } /* 't' */
+/* Estilos */
+
+.ancho{width: 100%}
+.contenedor{max-width: 1280px;margin:0 auto}
+
+a {text-decoration: none}
+a:hover{color:black;}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
