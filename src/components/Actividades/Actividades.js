@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Actividad from './Actividad/Actividad'
 import Barra from '../Barra/Barra'
+import BarraMas from '../Barra/BarraMas'
 
 import foto1 from './../../assets/imgs/noticias/convivencia.jpg'
 import foto2 from './../../assets/imgs/noticias/seguridad.jpg'
@@ -13,11 +14,9 @@ const Listado=styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-flow: row;
-    font-size:19px;
     z-index:2;
-    @media(max-width:700px){
+    @media(max-width:620px){
         grid-template-columns: 100%;
-        font-size:16px;
     }
 `
 const listactividades = [
@@ -35,7 +34,7 @@ const Actividades = () =>{
 
     return(
         <div>
-            <Barra titulo="Actividades" mas="+"/>
+            <Barra titulo="Actividades"/>
             <Listado  className="contenedor">
                 {listactividades.map((noti,index) => {
                     return(
@@ -50,6 +49,7 @@ const Actividades = () =>{
                     )
                 })}
             </Listado>
+            <BarraMas mas="mas noticias >>"/>
         </div>
     )
 }

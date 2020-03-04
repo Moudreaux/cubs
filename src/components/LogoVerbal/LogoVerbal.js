@@ -1,13 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import asociado from '../../../assets/imgs/icsw.jpg'
+import asociado from '../../assets/imgs/icsw.jpg'
 
 const Wrapper =styled.div`
     display:grid;
     grid-template-rows: 80% 20%;
-    height:${props => props.altura || "320px"};
+    height:200px;
     @media (max-width:700px) {
-        height:250px;
+        height:170px;
+    }
+    @media(max-width:450px){
+        height:220px;
     }
 `
 const Verbal =styled.div`
